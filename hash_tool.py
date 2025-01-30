@@ -152,7 +152,7 @@ def decode_hash(target_hash, wordlist):
 
 def decode_string():
     target_hash = input("Enter the hash value you want to decode: ").strip().lower()
-    wordlist = input("Enter the path to the wordlist file : ").strip()
+    wordlist = input("Enter the path to the wordlist file (default : rockyou.txt) : ").strip()
     print("Decoding... Please wait...")
     result, hash_type = decode_hash(target_hash, wordlist)
     if result:
